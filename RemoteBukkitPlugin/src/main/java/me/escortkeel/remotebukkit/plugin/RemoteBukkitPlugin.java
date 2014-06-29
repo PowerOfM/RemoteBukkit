@@ -64,7 +64,8 @@ public class RemoteBukkitPlugin extends JavaPlugin {
         getConfig().options().copyDefaults(true);
     }
 
-    @Override
+    @SuppressWarnings("unchecked")
+	@Override
     public void onEnable() {
         appender = new LogAppender(this);
 
